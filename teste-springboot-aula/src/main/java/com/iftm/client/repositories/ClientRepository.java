@@ -39,6 +39,4 @@ public interface ClientRepository extends JpaRepository<Client, Long> {
     Page<Client> findByIncomeGreaterThan(double salarioI, Pageable pageable);
 
     Page<Client> findByCpfLike(String parteCpf, Pageable pageable);
-
-
 }
