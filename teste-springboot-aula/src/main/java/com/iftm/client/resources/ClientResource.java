@@ -60,7 +60,7 @@ public class ClientResource {
 	/* Mudança
 	 * Novo método: retorna uma lista paginada baseada no salário
 	 */
-	@GetMapping(value = "/incomeGreaterThan/")
+	@GetMapping(value = "/incomeGreaterThan")
 	public ResponseEntity<Page<ClientDTO>> findByIncomeGreaterThan(
 			@RequestParam(value = "income", defaultValue = "0") Double income,
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
